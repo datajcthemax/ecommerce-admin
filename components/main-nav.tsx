@@ -1,8 +1,9 @@
 'use client';
 
-import { cn } from "@/lib/utils";
-import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
+import Link from "next/link";
+
+import { cn } from "@/lib/utils";
 
 export function MainNav({
     className,
@@ -16,8 +17,9 @@ export function MainNav({
             href: `/${params.storeId}/settings`,
             label: 'Settings',
             active: pathname === `/${params.storeId}/settings`,
-        }
+        },
     ];
+
 
   return(
     <nav 
